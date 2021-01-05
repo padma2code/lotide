@@ -1,25 +1,24 @@
-let res= []
-let tail = function (params)
-{
-    for (i=1; i<params.length; i++) {
-    res.push(params[i])
+let res = [];
+let tail = function(params) {
+  for (let i = 1; i < params.length; i++) {
+    res.push(params[i]);
     
-    }
-    return res
-}
+  }
+  return res;
+};
 
 
 const assertEqual = function(words, expected) {
 
-    console.log (words)
-    console.log (expected)
-    if (words.toString() === expected.toString()) {
+  console.log(words);
+  console.log(expected);
+  if (words.toString() === expected.toString()) {
         
-        console.log('✅️✅️✅️Assertion Passed:'+ words + '===' + expected);
-    } else {
-        console.log('🔴️🔴️🔴️Assertion Failed:'+ words + '!=' + expected);
-    }
-  };
+    console.log('✅️✅️✅️Assertion Passed:' + words + '===' + expected);
+  } else {
+    console.log('🔴️🔴️🔴️Assertion Failed:' + words + '!=' + expected);
+  }
+};
 
 //const words = tail(["Hello", "Lighthouse", "Labs"]);
 //assertEqual(words, ["Lighthouse", "Labs"]); // => will pass!
@@ -35,5 +34,5 @@ const assertEqual = function(words, expected) {
 const word = ["Yo Yo", "Lighthouse", "Labs"];
 //console.log(tail(word).length); // no need to capture the return value since we are not checking it
 //assertEqual(word.length, 3); // original array should still have 3 elements!
-assertEqual(tail(word).length, 3); 
+assertEqual(tail(word).length, 3);
 
