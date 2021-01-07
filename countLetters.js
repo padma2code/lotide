@@ -12,3 +12,4 @@ const getFrequency = (string) => {
   return freq;
 };
 console.log(getFrequency("abbsdssr"));
+
