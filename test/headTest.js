@@ -18,7 +18,7 @@ const eqArrays = function(array1, array2) {
     }
     return correct;
   };
-
+cd 
 assertEqual(head([5,6,7]), 56);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 
